@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dde6ff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+  text-align: center;
+}
+
+.content h1 {
+  color: #1f2f56;
+}
+
+.info p {
+  color: #8b95b1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f3ff;
+  padding: 10px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.plan > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.plan div > div h4 {
+  margin-bottom: 5px;
+}
+.plan button {
+  border: none;
+  background-color: transparent;
+  color: #ff00ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.content .pro {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #766cf1, #5a4ff3);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.content .pro:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 11px 0 #766cf185;
+  cursor: pointer;
+}
+
+.content .can {
+  border: none;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.2em;
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 350px;
+    margin: 100px auto;
+  }
+
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
